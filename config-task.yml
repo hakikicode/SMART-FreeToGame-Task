@@ -58,7 +58,7 @@ submission_window: 600
 
 ## Minimum Stake Amount ##
 # The minimum amount of KOII that a user must stake in order to participate in the task.
-minimum_stake_amount: 0.1
+minimum_stake_amount: 1.9
 
 ## Task Bounty Type ##
 # KOII or KPL
@@ -99,13 +99,10 @@ requirementsTags:
     value: "5 GB"
   - type: STORAGE
     value: "5 GB"
-  - type: TASK_VARIABLE
-    value: "TG_USERNAME"
-    description: "add your telegram username with or without @."
 
 ## Tags ##
 # See https://www.koii.network/docs/develop/command-line-tool/create-task-cli/create-task#tags for available tag options.
-tags: ["Data Gathering", "Web Crawling"]
+tags: ["Data Validation", "Gaming"]
 
 # Environment ##
 # TEST or PRODUCTION
@@ -115,7 +112,7 @@ environment: "PRODUCTION"
 #################################### FOR UPDATING TASKS ONLY ####################################
 
 ## Old Task ID ##
-task_id: "2cmwQeXPjLDqc3UJ5q72otxySsvXxYDqYzNTeWMbuWx5"
+task_id: ""
 
 ## Migration Description ##
 migrationDescription: "This task rewards users based on validated Telegram game data, including fields like TG_USERNAME and PlayerScore. The validation process ensures that rewards correspond to accurate gameplay data submitted through Koii's decentralized node network."
