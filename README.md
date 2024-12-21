@@ -1,98 +1,67 @@
-# SMART Task for Call of Duty
+# SMART FreeToGame Task
 
-# SMART Task for Call of Duty: Stats-Driven Task
-
-**SMART Task for Call of Duty: Stats-Driven Task** integrates the principles of the **SMART Open Network** with a gaming twist, enabling users to validate Fortnite leaderboard data, earn rewards in **SMART tokens**, and contribute to the decentralized ecosystem.
+The **SMART Task for FreeToGame** integrates **SMART Open Network** principles with gaming to enable users to validate leaderboard data, earn **SMART tokens**, and contribute to a decentralized ecosystem.
 
 ---
 
 ## Overview
 
-### What is SMART Fortnite Games Task?
-
-A **SMART Task** focused on validating Fortnite leaderboard data. Users participate by:
-
-- **Fetching and verifying Fortnite Leaderboard scores.**
-- **Contributing to decentralized task validation on the Koii Network.**
-- **Earning SMART tokens** for their participation and accuracy.
+The **SMART Task** allows participants to validateFreeToGame gameplay data by fetching, verifying, and ensuring accuracy, while earning SMART tokens for their contributions.
 
 ---
 
 ## Key Features
 
-### Fortnite leaderboard Validation:
-- Retrieve live leaderboard data for Fortnite using open APIs.
-- Validate the correctness of submitted scores for accuracy and fairness.
-
-### SMART Tokens:
-- Earn utility tokens for completing tasks.
-- Use tokens for governance, staking, or gaming rewards.
-
-### Blockchain Validation:
-- Tasks are logged on the Koii blockchain for transparency.
-- Participants validate data submitted by others to ensure integrity.
+- **Leaderboard Validation:** Verify accuracy of Freetogame Gameplay data using open APIs.
+- **Earn SMART Tokens:** Receive SMART tokens for completing validations.
+- **Blockchain Transparency:** Tasks and validations are logged on the Koii blockchain for integrity and transparency.
 
 ---
 
-## How SMART Fortnite Games Task Works
+## How it Works
 
-### 1. Task Setup
-Participants set up their **Koii Node** to begin receiving tasks. The task involves fetching Fortnite leaderboard data, validating it, and earning rewards.
-
-### 2. Task Workflow
-
-#### a. Fetch Leaderboard Data:
-The SMART Task fetches leaderboard data from Fortnite's open API during each round.
-
-#### b. Validate Data:
-Participants audit the data:
-- Confirm that player scores, names, and other attributes align with the API source.
-- Validate submitted proofs against the raw data.
-
-#### c. Reward Distribution:
-Accurate validations are rewarded with **SMART tokens**.
+1. **Set up Koii Node:** Install and run a **Koii Node** to start receiving tasks.
+2. **Fetch Data:** The task fetches live gameplay data from FreeTogame open API.
+3. **Validate Data:** Audit data, ensuring player scores and attributes align with the API source.
+4. **Earn SMART Tokens:** Receive rewards for accurate validations.
 
 ---
 
-## Getting Started with SMART Fortnite Games Task
+## Getting Started
 
 ### Requirements
-1. A **Koii Node** to participate in tasks.
-2. A supported **crypto wallet** to store and manage **SMART tokens**.
+
+- **Koii Node** to participate in tasks.
+- A supported **crypto wallet** to manage SMART tokens.
 
 ### Steps to Participate
 
-1. **Set up a Koii Node**:
-   - Follow [Koii Network](https://koii.network/) instructions to install and run your node.
-
-2. **Run the SMART Task**:
-   - Execute the task script for the current round to fetch, validate, and submit leaderboard data.
-
-3. **Start Earning**:
-   - Earn **SMART tokens** for completing tasks and contributing to the decentralized network.
+1. **Set up a Koii Node:** Follow instructions on [Koii Network](https://koii.network/).
+2. **Run the Task:** Execute the task to fetch, validate, and submit leaderboard data.
+3. **Start Earning:** Receive SMART tokens for your contributions.
 
 ---
 
-## Benefits of Participating
+## Benefits
 
-- **Earn SMART tokens** for task completion and accurate validations.
+- **Earn SMART tokens** for completing tasks.
 - **Use SMART tokens** for staking, governance, or gaming rewards.
-- Join a decentralized ecosystem and contribute to blockchain task validation.
+- Contribute to a **decentralized ecosystem**.
 
 ---
 
 ## Roadmap
 
-1. **Phase 1**: Launch the SMART Fortnite Games Task on the Koii Network.
-2. **Phase 2**: Expand tasks to include additional score-based games and gaming features.
-3. **Phase 3**: Integrate staking and DeFi utilities for SMART tokens.
-4. **Phase 4**: Build partnerships with complementary blockchain platforms.
+1. **Phase 1:** Launch SMART Task for FreeToGame.
+2. **Phase 2:** Expand to more score-based games.
+3. **Phase 3:** Integrate staking and DeFi utilities for SMART tokens.
+4. **Phase 4:** Partner with other blockchain platforms.
 
 ---
 
-For questions or assistance, reach out to our team:
+For support or inquiries, contact us:
 
-- **Email**: nativeopen.x@gmail.com
-- **Twitter (X)**: [@smart_openet](https://twitter.com/smart_openet)
-- **Instagram**: [smart_openet](https://www.instagram.com/smart_openet)
-- **Telegram**: [@depinsdirect](https://t.me/depinsdirect)
+- **Email:** nativeopen.x@gmail.com
+- **Twitter (X):** [@smart_openet](https://twitter.com/smart_openet)
+- **Instagram:** [smart_openet](https://www.instagram.com/smart_openet)
+- **Telegram:** [@depinsdirect](https://t.me/depinsdirect)

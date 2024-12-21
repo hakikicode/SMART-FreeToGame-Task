@@ -17,11 +17,11 @@ markdownDescriptionPath: "./TaskDescription.md"
 
 ## Task Description ##
 # Ignored if you specify a markdown file.
-description: "check and validate games data."
+description: "check and validate FreeToGames data."
 
 ## Repository URL ##
 # Must be public for whitelisted tasks.
-repositoryUrl: "https://github.com/hakikicode/SMART-Task"
+repositoryUrl: "https://github.com/hakikicode/SMART-FreeToGame-Task"
 
 ## Image URL ##
 # 230x86 pixels.
@@ -71,12 +71,12 @@ token_type: "HK8STMDTos4QFocyEADxwdXBrN13DCB9AcwLXsmvBthh"
 ## Total Bounty Amount ##
 # The total bounty amount that will be available for distribution over all rounds.
 # Does nothing when updating a task.
-total_bounty_amount: 1000000
+total_bounty_amount: 2000000
 
 ## Bounty Amount per Round ##
 # The maximum amount that can be distributed per round.
 # If the actual distribution per round exceeds this amount, the distribution list will fail.
-bounty_amount_per_round: 0.1
+bounty_amount_per_round: 0.5
 
 ## Allowed Failed Distributions ##
 # Number of retries allowed for the distribution list if it is fails audit.
@@ -115,4 +115,4 @@ environment: "PRODUCTION"
 task_id: ""
 
 ## Migration Description ##
-migrationDescription: "This task rewards users based on validated Telegram game data, including fields like TG_USERNAME and PlayerScore. The validation process ensures that rewards correspond to accurate gameplay data submitted through Koii's decentralized node network."
+migrationDescription: "This task rewards users based on validated FreeToGame game data. The validation process ensures that rewards correspond to accurate gameplay data submitted through Koii's decentralized node network."
