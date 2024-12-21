@@ -1,16 +1,9 @@
-import { namespaceWrapper, app } from "@_koii/namespace-wrapper";
+// 5-routes.js
+import { app, namespaceWrapper } from "@_koii/namespace-wrapper";
 
 export function routes() {
-  /**
-   *
-   * Define all your custom routes here
-   *
-   */
-
-  // Example route
-  app.get("/value", async (_req, res) => {
-    const value = await namespaceWrapper.storeGet("value");
-    console.log("value", value);
-    res.status(200).json({ value: value });
+  app.get("/games", async (_req, res) => {
+    const data = await namespaceWrapper.storeGet("submitted_games_data");
+    res.status(200).json({ data: JSON.parse(data || "[]") });
   });
 }

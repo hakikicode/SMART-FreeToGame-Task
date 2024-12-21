@@ -1,23 +1,20 @@
-const SLASH_PERCENT = 0.7;
-
-export function distribution(submitters, bounty, roundNumber) {
+export function distribution(submitters, bounty) {
   const distributionList = {};
-  const approvedSubmitters = [];
+  const approvedSubmitters = submitters.filter((submitter) => submitter.votes > 0);
 
-  for (const submitter of submitters) {
-    if (submitter.votes > 0) {
-      approvedSubmitters.push(submitter.publicKey);
-    } else if (submitter.votes < 0) {
-      const slashedStake = Math.floor(submitter.stake * SLASH_PERCENT);
-      distributionList[submitter.publicKey] = -slashedStake;
-      console.log("Stake slashed for:", submitter.publicKey);
-    }
+  if (approvedSubmitters.length === 0) {
+    console.warn("No approved submitters for distribution.");
+    return distributionList;
   }
 
+  // Calculate reward per approved submitter
   const reward = Math.floor(bounty / approvedSubmitters.length);
-  approvedSubmitters.forEach(candidate => {
-    distributionList[candidate] = reward;
+
+  // Distribute the bounty
+  approvedSubmitters.forEach((submitter) => {
+    distributionList[submitter.publicKey] = reward;
   });
 
+  console.log("Final distribution list:", distributionList);
   return distributionList;
 }
