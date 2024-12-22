@@ -112,7 +112,7 @@ environment: "PRODUCTION"
 #################################### FOR UPDATING TASKS ONLY ####################################
 
 ## Old Task ID ##
-task_id: ""
+task_id: "A6utX6vHeG4ToN771qMxmA3mkU6G6ct4VvAdcnCtfnKQ"
 
 ## Migration Description ##
 migrationDescription: "This task rewards users based on validated FreeToGame game data. The validation process ensures that rewards correspond to accurate gameplay data submitted through Koii's decentralized node network."
