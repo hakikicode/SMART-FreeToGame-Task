@@ -1,45 +1,30 @@
-// 1-task.js
-import axios from "axios";
 import { namespaceWrapper } from "@_koii/namespace-wrapper";
-import { setup } from "./0-setup.js";
+import axios from "axios";
 
-// Destructure BASE_URL from the setup function
-const { BASE_URL } = setup();
-
-// Fetch games data from the FreeToGame API
-async function fetchGames(platform = "pc", category = "shooter", sortBy = "popularity") {
-  try {
-    console.log("Fetching games data from FreeToGame API...");
-    const response = await axios.get(
-      `${BASE_URL}/games?platform=${platform}&category=${category}&sort-by=${sortBy}`
-    );
-    console.log("Games data fetched successfully.");
-    return response.data || [];
-  } catch (error) {
-    console.error("Error fetching games data:", error.message);
-    return [];
-  }
-}
-
-// Task function to execute the game data collection and storage
 export async function task(roundNumber) {
+  console.log(`Executing FreeToGame Task for round ${roundNumber}...`);
   try {
-    console.log(`Executing FreeToGame Task for round ${roundNumber}...`);
+    // Fetch game data
+    const response = await axios.get("https://www.freetogame.com/api/games");
+    const gamesData = response.data;
 
-    // Fetch games data
-    const gamesData = await fetchGames();
+    if (!gamesData || gamesData.length === 0) {
+      console.warn("No games data fetched from FreeToGame API.");
+      return;
+    }
 
-    if (gamesData.length > 0) {
-      // Store games data using namespaceWrapper
-      const storageKey = `round_${roundNumber}_gamesData`;
-      console.log(`Storing games data with key: ${storageKey}`);
-      await namespaceWrapper.storeSet(storageKey, JSON.stringify(gamesData));
+    // Store data with a round-specific key
+    const key = `round_${roundNumber}_gamesData`;
+    await namespaceWrapper.storeSet(key, JSON.stringify(gamesData));
 
-      console.log(`Game data stored successfully for round ${roundNumber}.`);
+    // Verify data is stored correctly
+    const storedData = await namespaceWrapper.storeGet(key);
+    if (!storedData) {
+      console.error(`Data verification failed for key: ${key}`);
     } else {
-      console.warn("No games data collected to store.");
+      console.log(`Game data stored successfully for round ${roundNumber}.`);
     }
   } catch (error) {
-    console.error("Task execution error:", error.message);
+    console.error("Error fetching games data:", error.message);
   }
 }

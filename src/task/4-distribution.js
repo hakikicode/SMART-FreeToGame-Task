@@ -1,16 +1,17 @@
 export function distribution(submitters, bounty) {
+  console.log("Generating distribution list...");
   const distributionList = {};
   const approvedSubmitters = submitters.filter((submitter) => submitter.votes > 0);
 
   if (approvedSubmitters.length === 0) {
-    console.warn("No approved submitters for distribution.");
+    console.warn("No approved submitters for distribution. Setting rewards to 0.");
+    approvedSubmitters.forEach((submitter) => {
+      distributionList[submitter.publicKey] = 0; // Log zero rewards explicitly.
+    });
     return distributionList;
   }
 
-  // Calculate reward per approved submitter
   const reward = Math.floor(bounty / approvedSubmitters.length);
-
-  // Distribute the bounty
   approvedSubmitters.forEach((submitter) => {
     distributionList[submitter.publicKey] = reward;
   });
